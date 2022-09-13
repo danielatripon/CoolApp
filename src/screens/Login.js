@@ -18,7 +18,7 @@ export default function Login() {
           secureTextEntry={true}
           leftIcon={{ type: "font-awesome", name: "lock" }}
         />
-        <MyButton buttonText="Press This"></MyButton>
+        <MyButton></MyButton>
       </View>
     </>
   );
