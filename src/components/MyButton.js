@@ -1,4 +1,4 @@
-import { StyleSheet, Text, Pressable, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 export default function MyButton() {
   return (
@@ -10,7 +10,7 @@ export default function MyButton() {
 
 const styles = StyleSheet.create({
   buttonStyle: {
-    backgroundColor: "lightgreen",
+    backgroundColor: "#4cbb17",
     alignItems: "center",
     justifyContent: "center",
     fontWeight: "bold",
