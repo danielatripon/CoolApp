@@ -1,3 +1,3 @@
 # CoolApp
-Mobile app developed for homework
+Mobile app developed for homework.
 Please see code on Master branch.
