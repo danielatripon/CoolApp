@@ -1,7 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
-import MyText from "../components/MyText";
-import MyButton from "../components/MyButton";
+import { StyleSheet, View, Text } from "react-native";
 
 export default function Contact() {
   return (
