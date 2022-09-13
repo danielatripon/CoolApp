@@ -4,7 +4,7 @@ import { StyleSheet, View, Text } from "react-native";
 export default function Contact() {
   return (
     <View style={styles.container}>
-      <Text>Contact us</Text>
+      <Text style={styles.title}>Contact us</Text>
 
       <StatusBar style="auto" />
       <StatusBar style="auto" />
@@ -20,5 +20,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     fontWeight: "bold",
     color: "#0EE310",
+  },
+  title: {
+    color: "#74C5A1",
+    fontWeight: "bold",
+    fontSize: 30,
+    paddingBottom: 20,
+    textAlign: "center",
   },
 });

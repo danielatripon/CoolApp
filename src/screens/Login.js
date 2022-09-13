@@ -7,6 +7,7 @@ export default function Login() {
   return (
     <>
       <View style={styles.viewStyle}>
+        <Text style={styles.title}>Login</Text>
         <Input
           placeholder=" Enter username..."
           leftIcon={{ type: "font-awesome", name: "user" }}
@@ -31,5 +32,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     fontWeight: "bold",
     color: "#0EE310",
+  },
+  title: {
+    color: "#74C5A1",
+    fontWeight: "bold",
+    fontSize: 30,
+    paddingBottom: 20,
+    textAlign: "center",
   },
 });

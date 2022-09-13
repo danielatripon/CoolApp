@@ -10,9 +10,6 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <MyText> Welcome to my CoolApp!</MyText>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
 
       <Image
         source={{ uri: BASE_URI }}
@@ -39,5 +36,6 @@ const styles = StyleSheet.create({
     backgroundSize: "cover",
     width: "100%",
     height: "60%",
+    marginTop: 50,
   },
 });
