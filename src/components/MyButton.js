@@ -10,7 +10,7 @@ export default function MyButton() {
 
 const styles = StyleSheet.create({
   buttonStyle: {
-    backgroundColor: "lightgreen",
+    backgroundColor: "#4cbb17",
     alignItems: "center",
     justifyContent: "center",
     fontWeight: "bold",

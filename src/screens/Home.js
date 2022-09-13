@@ -1,10 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import {
-  StyleSheet,
-  View,
-  SafeAreaView,
-  ActivityIndicator,
-} from "react-native";
+import { StyleSheet, View, ActivityIndicator, Text } from "react-native";
 import MyText from "../components/MyText";
 import { Image } from "@rneui/themed";
 
@@ -14,11 +9,14 @@ const BASE_URI =
 export default function Home() {
   return (
     <View style={styles.container}>
-      <MyText></MyText>
+      <MyText> Welcome to my CoolApp!</MyText>
+      <Text></Text>
+      <Text></Text>
+      <Text></Text>
 
       <Image
         source={{ uri: BASE_URI }}
-        containerStyle={styles.item}
+        containerStyle={styles.image}
         PlaceholderContent={<ActivityIndicator />}
       />
 
@@ -36,7 +34,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#0EE310",
   },
-  item: {
+  image: {
     backgroundColor: "red",
     backgroundSize: "cover",
     width: "100%",
