@@ -1,13 +1,27 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+import {
+  StyleSheet,
+  View,
+  SafeAreaView,
+  ActivityIndicator,
+} from "react-native";
 import MyText from "../components/MyText";
-import MyButton from "../components/MyButton";
+import { Image } from "@rneui/themed";
+
+const BASE_URI =
+  "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg";
 
 export default function Home() {
   return (
     <View style={styles.container}>
       <MyText></MyText>
-      <MyButton buttonText="Press This"></MyButton>
+
+      <Image
+        source={{ uri: BASE_URI }}
+        containerStyle={styles.item}
+        PlaceholderContent={<ActivityIndicator />}
+      />
+
       <StatusBar style="auto" />
     </View>
   );
@@ -21,5 +35,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     fontWeight: "bold",
     color: "#0EE310",
+  },
+  item: {
+    backgroundColor: "red",
+    backgroundSize: "cover",
+    width: "100%",
+    height: "60%",
   },
 });

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, Pressable, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 export default function MyButton() {
   return (
