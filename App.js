@@ -13,6 +13,7 @@ import { Provider, useSelector } from "react-redux";
 import { store } from "./src/store";
 import AuthReducers from "./src/store/reducers";
 import { StatusBar } from "react-native";
+import Profile from "./src/screens/Profile";
 
 const Tab = createBottomTabNavigator();
 
@@ -35,7 +36,7 @@ const AuthStack = () => {
 
 const RootNavigation = () => {
   const token = useSelector((state) => state.AuthReducers.authToken);
-
+  console.log(token);
   return (
     <NavigationContainer>
       {token === null ? (
@@ -53,12 +54,12 @@ const RootNavigation = () => {
             }}
           />
           <Tab.Screen
-            name="Login"
-            component={Login}
+            name="Profile"
+            component={Profile}
             options={{
-              tabBarLabel: "Login",
+              tabBarLabel: "Profile",
               tabBarIcon: ({ color, size }) => (
-                <Entypo name="login" size={size} color={color} />
+                <Entypo name="user" size={size} color={color} />
               ),
             }}
           />

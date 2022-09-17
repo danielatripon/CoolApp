@@ -8,7 +8,6 @@ import { LoginFunction } from "../store/actions";
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  // console.log(username, password);
 
   const dispatch = useDispatch();
   const submit = () => {

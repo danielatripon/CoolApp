@@ -5,3 +5,9 @@ export const LoginFunction = (username, password) => {
     payload: token,
   };
 };
+
+export const Logout = () => {
+  return {
+    type: "LOGOUT",
+  };
+};
