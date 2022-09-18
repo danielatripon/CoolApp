@@ -32,7 +32,29 @@ export default function Login() {
           value={password}
           onChangeText={(text) => setPassword(text)}
         />
-        <Button onPress={submit}>Login</Button>
+
+        <Button
+          title="Login"
+          titleStyle={{ fontWeight: "bold", fontSize: 18 }}
+          buttonStyle={{
+            backgroundColor: "#4cbb17",
+            borderRadius: 5,
+          }}
+          containerStyle={{
+            width: 300,
+            marginHorizontal: 50,
+            marginVertical: 10,
+          }}
+          icon={{
+            name: "arrow-right",
+            type: "font-awesome",
+            size: 15,
+            color: "white",
+          }}
+          iconRight
+          iconContainerStyle={{ marginLeft: 10, marginRight: -10 }}
+          onPress={submit}
+        />
       </View>
     </>
   );
